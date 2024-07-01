@@ -55,6 +55,13 @@ class Moto extends Veiculo
         echo "Dando grau...";
     }
 
+    public function getCor(){
+        return $this->cor;    
+    }
+
+    public function setCor($cor){
+        $this->cor = $cor;
+    }
 }
 
 
@@ -74,7 +81,7 @@ var_dump($carro);
 $moto = new Moto();
 // $moto->modelo = "Honda";
 $moto->setModelo("Honda");
-$moto->cor = "Azul";
+$moto->setCor("Azul");
 $moto->ano = 2019;
 $moto->Parar();
 echo "<br>";
